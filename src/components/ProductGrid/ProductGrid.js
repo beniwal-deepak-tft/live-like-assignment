@@ -5,7 +5,7 @@ import "./ProductGrid.css";
 
 const ProductGrid = ({ products, isLoading }) => {
   if (isLoading) {
-    // Render skeleton placeholders while loading
+
     return (
       <Row xs={1} sm={2} md={3} lg={3} className="g-4 product-grid">
         {Array.from({ length: 9 }).map((_, index) => (

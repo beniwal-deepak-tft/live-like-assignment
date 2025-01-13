@@ -15,7 +15,7 @@ const ProductCard = ({ title, price, description, image }) => {
       <Card.Body>
         {/* Product Title */}
         <Card.Title className="card-title">
-          {limitChars(title, 45)}
+          {limitChars(title, 30)}
         </Card.Title>{" "}
         {/* Limit to 25 chars */}
         {/* Product Image */}
@@ -34,7 +34,7 @@ const ProductCard = ({ title, price, description, image }) => {
         {/* Description */}
         <Card.Subtitle className="mt-3">Description</Card.Subtitle>
         <Card.Text className="mt-1 description">
-          {limitChars(description, 100)} {/* Limit to 100 chars */}
+          {limitChars(description, 90)}
         </Card.Text>
       </Card.Body>
     </Card>

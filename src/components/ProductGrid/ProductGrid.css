@@ -1,17 +1,17 @@
 .product-grid {
   padding-left: 30px;
-  overflow-y: auto; /* Keep vertical scrolling enabled */
+  overflow-y: auto;
   height: 80vh;
-  scrollbar-width: thin; /* For Firefox */
-  scrollbar-color: transparent transparent; /* Hide the scrollbar in Firefox */
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent;
 }
 
 .product-grid::-webkit-scrollbar {
-  width: 0; /* Hide scrollbar for Webkit browsers like Chrome, Safari, and Edge */
+  width: 0;
 }
 
 .product-grid::-webkit-scrollbar-thumb {
-  background: transparent; /* Remove scrollbar thumb */
+  background: transparent;
 }
 
 .skeleton-card {

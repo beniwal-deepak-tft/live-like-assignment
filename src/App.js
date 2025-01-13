@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import Header from "./components/Header/Header";
@@ -141,7 +140,7 @@ const handleSortByDiscount = (order) => {
           onCategoryClick={handleCategoryClick}
           isLoading={isLoading}
         />
-        <main className="col-10">
+        <main className="main-content">
           <Header
             isLoading={isLoading}
             onSortByPrice={handleSortByPrice}

@@ -12,15 +12,19 @@ const Header = ({
   onSearchChange,
 }) => {
   const [activeButton, setActiveButton] = useState(null);
-  const [priceSortOrder, setPriceSortOrder] = useState(null); // Tracks price sorting order (asc, desc, null)
-  const [discountSortOrder, setDiscountSortOrder] = useState(null); // Tracks discount sorting order (asc, desc, null)
+  const [priceSortOrder, setPriceSortOrder] = useState(null);
+  const [discountSortOrder, setDiscountSortOrder] = useState(null);
 
   useEffect(() => {
     setActiveButton(null);
+    setPriceSortOrder(null);
+    setDiscountSortOrder(null);
   }, [selectedCategory]);
 
   useEffect(() => {
     setActiveButton(null);
+    setPriceSortOrder(null);
+    setDiscountSortOrder(null);
   }, [priceRange]);
 
   const handleSortByPrice = () => {
@@ -29,7 +33,7 @@ const Header = ({
       onSortByPrice("desc");
     } else if (priceSortOrder === "desc") {
       setPriceSortOrder(null);
-      onSortByPrice(true); // Reset sorting
+      onSortByPrice(true);
     } else {
       setPriceSortOrder("asc");
       onSortByPrice("asc");
@@ -42,7 +46,7 @@ const Header = ({
       onSortByDiscount("desc");
     } else if (discountSortOrder === "desc") {
       setDiscountSortOrder(null);
-      onSortByDiscount(true); // Reset sorting
+      onSortByDiscount(true);
     } else {
       setDiscountSortOrder("asc");
       onSortByDiscount("asc");

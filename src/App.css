@@ -11,6 +11,10 @@
   border-radius: 4px;
   animation: shimmer 1.5s infinite;
 }
+.main-content{
+  flex: 0 0 auto !important;
+  width: 80.33333333% !important;
+}
 
 @keyframes shimmer {
   0% {

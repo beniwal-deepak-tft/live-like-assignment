@@ -1,4 +1,3 @@
-// helper.js
 export const filterProducts = (
   products,
   category,

@@ -1,4 +1,4 @@
-/* Add space above the header */
+
 .header-container {
   margin-top: 20px;
 }
@@ -7,19 +7,19 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px; /* Space between elements */
+  gap: 20px;
   width: 100%;
-  flex-wrap: wrap; /* Wrap the items on smaller screens */
+  flex-wrap: wrap;
 }
 
 .filter-buttons {
   display: flex;
-  gap: 15px; /* Space between the buttons */
+  gap: 15px;
 }
 
 .search-bar {
   flex: 1;
-  max-width: 300px; /* Maximum width of the search bar */
+  max-width: 300px;
 }
 
 .range-input {

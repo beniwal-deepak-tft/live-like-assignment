@@ -1,5 +1,5 @@
 .sidebar {
-  background-color: #ffffff; /* Dark blue-gray background */
+  background-color: #ffffff; 
   height: 54vh;
   width: 250px !important;
   margin-top: 160px !important;
@@ -16,29 +16,29 @@
   border: none;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #d3dae2; /* Darker shade for category items */
-  color: #020202; /* Light text color */
+  background-color: #d3dae2;
+  color: #020202;
   font-size: 1rem;
   font-weight: 500;
   transition: all 0.3s ease;
 }
 
 .sidebar .category-item.active {
-  background-color: #a1abadc9; /* Highlighted active item */
-  color: #fff; /* White text on active category */
+  background-color: #a1abadc9;
+  color: #fff;
   margin-top: 5px !important;
 }
 
 .sidebar .category-item:hover {
-  background-color: #a1abad; /* Slightly lighter shade when hovered */
-  color: #fff; /* White text when hovered */
+  background-color: #a1abad; 
+  color: #fff;
 }
 
 .category-item.skeleton {
   display: flex;
   align-items: center;
   padding: 10px;
-  background-color: #BDC3C7; /* Skeleton item background */
+  background-color: #BDC3C7;
   border-radius: 4px;
   margin-bottom: 5px;
 }
@@ -46,7 +46,7 @@
 .skeleton-placeholder {
   width: 80%;
   height: 20px;
-  background-color: #ECF0F1; /* Light gray background for placeholders */
+  background-color: #ECF0F1;
   border-radius: 4px;
   animation: shimmer 1.5s infinite;
 }
