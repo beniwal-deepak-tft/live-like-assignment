@@ -1,0 +1,130 @@
+/* Add space above the header */
+.header-container {
+  margin-top: 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+  width: 100%;
+  flex-wrap: wrap; /* Wrap the items on smaller screens */
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 15px; /* Space between the buttons */
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 300px; /* Maximum width of the search bar */
+}
+
+.range-input {
+  width: 30%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+}
+
+.range-input .form-label {
+  color: #5f6368;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.range-input .form-range {
+  cursor: pointer;
+  background-color: #dcdfe1;
+  height: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.range-input .form-range:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgba(66, 133, 244, 0.25);
+}
+
+.range-input .custom-range::-webkit-slider-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #1a73e8;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.range-input .custom-range::-webkit-slider-thumb:hover {
+  background-color: #1565c0;
+  transform: scale(1.1);
+}
+
+.range-input .custom-range::-webkit-slider-runnable-track {
+  height: 10px;
+  border-radius: 10px;
+  background: #bdbdbd;
+}
+
+.range-input .custom-range:focus::-webkit-slider-runnable-track {
+  background-color: #1a73e8;
+}
+
+.range-input .form-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #1a73e8;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.range-input .form-range::-moz-range-thumb:hover {
+  background-color: #1565c0;
+  transform: scale(1.1);
+}
+
+.range-input .form-range::-moz-range-track {
+  height: 10px;
+  border-radius: 10px;
+  background: #bdbdbd;
+}
+
+.range-input .form-range:focus::-moz-range-track {
+  background-color: #1a73e8;
+}
+
+.header-skeleton {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.skeleton-button {
+  width: 120px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-radius: 50px;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-range {
+  flex: 1;
+  height: 8px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}

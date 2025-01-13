@@ -1,0 +1,67 @@
+.product-grid {
+  padding-left: 30px;
+  overflow-y: auto; /* Keep vertical scrolling enabled */
+  height: 80vh;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* Hide the scrollbar in Firefox */
+}
+
+.product-grid::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar for Webkit browsers like Chrome, Safari, and Edge */
+}
+
+.product-grid::-webkit-scrollbar-thumb {
+  background: transparent; /* Remove scrollbar thumb */
+}
+
+.skeleton-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skeleton-image {
+  width: 100%;
+  height: 150px;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-title,
+.skeleton-price,
+.skeleton-description {
+  width: 80%;
+  height: 15px;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  margin: 5px 0;
+  animation: shimmer 1.5s infinite;
+}
+
+.skeleton-title {
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.no-products-message {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3.2em;
+  font-weight: bold;
+  color: #6c757d;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
+  }
+}

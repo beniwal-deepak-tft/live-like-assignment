@@ -1,0 +1,91 @@
+.card {
+  background-color: #ffffff; /* Clean white background */
+  border: none; /* No border for a modern, clean look */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  border-radius: 12px; /* Rounded corners */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  overflow: hidden; /* Ensure rounded corners work correctly */
+}
+
+.card:hover {
+  transform: scale(1.02); /* Slightly enlarge the card on hover */
+}
+
+.card-body {
+  padding: 16px; /* Consistent padding */
+  text-align: center;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background-color: #fff; /* Consistent background */
+  border-radius: 12px;
+}
+
+.product-image {
+  width: 140px; /* Moderate image size */
+  height: 140px;
+  object-fit: contain;
+  border-radius: 12px; /* Rounded image edges */
+  margin: 0 auto 16px; /* Center image with margin */
+}
+
+.product-card .card-title {
+  font-size: 1.1rem; /* Slightly larger font for title */
+  font-weight: 600; /* Emphasize title */
+  color: #333; /* Dark text color */
+  margin-bottom: 12px;
+  line-height: 1.2; /* Better line height for readability */
+}
+
+.product-card .card-subtitle {
+  font-size: 1rem; /* Standard size for subtitle */
+  font-weight: normal;
+  color: #555; /* Light gray for subtitle */
+  margin-bottom: 12px; /* Space between price and description */
+}
+
+.product-card .card-text {
+  font-size: 0.9rem;
+  color: #333;
+  text-align: left;
+  margin-top: 8px;
+}
+
+.product-card input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded input corners */
+  margin-top: 12px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.product-card input[type="number"]:focus {
+  border-color: #4285f4; /* Google's blue on focus */
+}
+
+.product-card .description {
+  color: #777; /* Light gray description text */
+}
+
+@media (max-width: 576px) {
+  .product-card {
+    width: 100%;
+    height: auto; /* Allow the card to grow in height on smaller screens */
+  }
+
+  .product-image {
+    width: 120px;
+    height: 120px; /* Adjust image size for mobile */
+  }
+
+  .product-card .card-title {
+    font-size: 1.1rem; /* Slightly smaller font for mobile */
+  }
+}
