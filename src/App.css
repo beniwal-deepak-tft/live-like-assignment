@@ -16,6 +16,21 @@
   width: 80.33333333% !important;
 }
 
+@media (max-width: 576px) {
+  .main-content{
+  flex: 0 0 auto !important;
+  width: 99.33333333% !important;
+}
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .main-content{
+  flex: 0 0 auto !important;
+  width: 99.33333333% !important;
+}
+}
+
 @keyframes shimmer {
   0% {
     background-position: -200px 0;

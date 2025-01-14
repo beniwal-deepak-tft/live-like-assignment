@@ -65,3 +65,14 @@
     background-position: 200px 0;
   }
 }
+
+
+@media (max-width: 576px) {
+ .product-grid {
+  padding-left: 0px;
+  overflow-y: auto;
+  height: 80vh;
+  scrollbar-width: thin; 
+  scrollbar-color: transparent transparent;
+}
+}

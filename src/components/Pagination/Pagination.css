@@ -4,6 +4,9 @@
   align-items: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: #efefef;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .pagination button {

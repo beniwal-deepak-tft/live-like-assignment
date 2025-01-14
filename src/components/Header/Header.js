@@ -88,8 +88,8 @@ const Header = ({
 
             <InputGroup className="search-bar">
               <FormControl
-                placeholder="Search Products"
-                aria-label="Search Products"
+                placeholder="Search Entire Store Here"
+                aria-label="Search Entire Store Here"
                 onChange={(e) => onSearchChange(e.target.value)}
               />
             </InputGroup>
